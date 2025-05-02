@@ -1,0 +1,42 @@
+# Mi Sitio Web Personal
+
+
+
+Este es mi sitio web personal, un espacio donde presento mis habilidades, proyectos y respondo algunas preguntas frecuentes. Construido con un enfoque en la experiencia del usuario y el diseño responsive, este sitio refleja mi pasión por el desarrollo web.
+
+## Secciones Principales
+
+* **Inicio:** Una introducción sobre mí y mis intereses en el desarrollo web.
+* **Proyectos:** Un vistazo a mis proyectos personales, incluyendo:
+    * **Detrás de Cámaras de mi Sitio:** Un vistazo al código y las decisiones de diseño detrás de este mismo sitio web.
+    * **Sitio Demostrativo de Reservas Multi-Rubro:** (https://github.com/facujoel/demo-reservas-multi-rubro) Un proyecto que muestra plantillas de reservas para diferentes rubros.
+    * **Sitio para una Comuna Ficticia:** Un sitio informativo para una comunidad imaginaria, destacando información relevante y puntos de interés.
+* **FAQs:** Respuestas a preguntas frecuentes sobre mí, mis habilidades y mi trabajo.
+* **Contacto:** Un formulario para que los visitantes puedan ponerse en contacto conmigo.
+
+## Funcionalidades Destacadas
+
+* **Diseño Responsive:** El sitio se adapta a diferentes tamaños de pantalla (escritorio, tablets y móviles) gracias a Bootstrap.
+* **Scroll Suave:** La navegación entre secciones es fluida y agradable gracias a la implementación de JavaScript para un scroll más lento.
+* **Formulario de Contacto Funcional:** Un formulario de contacto construido con HTML y PHP que permite a los visitantes enviarme mensajes directamente.
+* **Almacenamiento de Datos:** Los mensajes enviados a través del formulario de contacto se almacenan de forma segura en una base de datos MySQL gestionada con PHP Panel.
+
+## Tecnologías Utilizadas
+
+* **HTML:** Para la estructura y el contenido del sitio web.
+* **CSS:** Para el diseño visual y la presentación de los elementos.
+* **Bootstrap:** Framework CSS que facilita la creación de un diseño responsive y atractivo.
+* **JavaScript:** Para añadir interactividad, como el efecto de scroll suave.
+* **PHP:** Para la lógica del formulario de contacto y la interacción con la base de datos MySQL.
+* **MySQL:** Sistema de gestión de bases de datos utilizado para almacenar los mensajes del formulario de contacto.
+* **PHP Panel:** Herramienta utilizada para administrar la base de datos MySQL.
+
+## ¿Cómo Explorar el Proyecto?
+
+Puedes navegar por las diferentes secciones del sitio utilizando el menú de navegación. En la sección de "Proyectos", encontrarás enlaces a los repositorios de GitHub de mis otros proyectos personales.
+
+## Próximos Pasos
+
+* Seguir actualizando la sección de proyectos con nuevos desarrollos.
+* Posiblemente añadir un blog para compartir mis aprendizajes y reflexiones sobre desarrollo web.
+* Optimizar aún más el diseño y la experiencia del usuario.
