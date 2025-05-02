@@ -1,0 +1,573 @@
+/* Estilos Generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Fondo oscuro a juego con el degradado */
+    color: #eee; /* Texto claro para contraste */
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #fff; /* Títulos en blanco */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.descripcion-seccion {
+    color: #ccc; /* Descripción en un gris claro */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.bg-info {
+    background-color: #7E8BEB !important; /* Reemplaza #333 con el color que desees */
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important; /* Cambia el color del texto del logo y los links a blanco */
+}  */
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #4d79ff !important; /* Cambia el color del texto de los links al pasar el ratón */
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Cambia el color del icono del toggler a blanco */
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button.primario {
+    background-color: #4d79ff; /* Un azul más intenso */
+    color: #fff;
+}
+
+.button.primario:hover {
+    background-color: #3355cc;
+}
+
+.button.secundario {
+    background-color: #66cc66; /* Un verde más vivo */
+    color: #fff;
+}
+
+.button.secundario:hover {
+    background-color: #4da64d;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .container h1,
+.hero .container p {
+    text-align: center;
+}
+
+.hero .container h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero .container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+/* Presentación de Habilidades Section */
+.presentacion-habilidades {
+    background: linear-gradient(90deg, #000000, #3533cd); /* Degradado de Canva */
+    color: #fff; /* Texto blanco para mejor contraste con el fondo oscuro */
+    padding: 80px 0; /* Aumentamos el padding para más espacio vertical */
+}
+
+.presentacion-habilidades h2 {
+    color: #fff; /* Aseguramos que el título sea blanco */
+    text-align: center; /* Centramos el título */
+    margin-bottom: 40px; /* Mayor espacio debajo del título */
+    font-size: 2.5em; /* Un tamaño de fuente más grande para el título de la sección */
+}
+
+.presentacion-habilidades .card {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para las tarjetas */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil para las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar las tarjetas */
+    border-radius: 10px; /* Bordes más redondeados para las tarjetas */
+    transition: transform 0.3s ease-in-out; /* Transición suave para el efecto hover */
+}
+
+.presentacion-habilidades .card:hover {
+    transform: translateY(-5px); /* Ligeramente eleva la tarjeta al pasar el ratón */
+}
+
+.presentacion-habilidades .card-body {
+    text-align: center;
+    padding: 30px; /* Mayor padding dentro de las tarjetas */
+}
+
+.presentacion-habilidades .card-body img {
+    max-width: 100px; /* Aumentamos el tamaño máximo de los iconos */
+    margin-bottom: 20px;
+    /* filter: brightness(0) invert(1); Iconos blancos para contrastar con el fondo */
+}
+
+.presentacion-habilidades .card-title {
+    color: #fff; /* Títulos de las tarjetas en blanco */
+    font-size: 1.5em; /* Tamaño de fuente para los títulos de las tarjetas */
+    margin-bottom: 15px;
+}
+
+.presentacion-habilidades .card-text {
+    color: #eee; /* Texto de las tarjetas en un gris claro */
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+/* ¿Qué Hacemos? Section */
+.que-hacemos {
+    padding: 60px 0;
+    background-color: #262626; /* Un gris oscuro */
+}
+
+.grid-servicios-detalle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.servicio-detalle {
+    background-color: #333; /* Un tono más oscuro */
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #444; /* Borde sutil */
+}
+
+.servicio-detalle h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.servicio-detalle p {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.servicio-detalle ul {
+    list-style: none;
+    padding: 0;
+}
+
+.servicio-detalle ul li {
+    margin-bottom: 5px;
+    color: #ddd;
+}
+
+/* ¿Por Qué Elegirnos? Section */
+.por-que-elegirnos {
+    padding: 60px 0;
+    background-color: #1a1a1a; /* Mismo fondo oscuro */
+}
+
+.grid-razones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.razon {
+    background-color: #262626; /* Un gris oscuro */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #333; /* Borde sutil */
+}
+
+.razon h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.razon p {
+    color: #ccc;
+}
+
+/* Contacto Section */
+.contacto {
+    padding: 60px 0;
+    background-color: #262626; /* Un gris oscuro */
+    text-align: center;
+}
+
+.formulario-contacto {
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #333; /* Fondo oscuro para el formulario */
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+.formulario-contacto .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.formulario-contacto .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff; /* Etiquetas en blanco */
+}
+
+.formulario-contacto .form-group input[type="text"],
+.formulario-contacto .form-group input[type="email"],
+.formulario-contacto .form-group textarea,
+.formulario-contacto .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #444; /* Fondo oscuro para los inputs */
+    color: #eee; /* Texto claro en los inputs */
+}
+
+.formulario-contacto .form-group textarea {
+    min-height: 100px;
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Fondo oscuro para el footer */
+    padding: 40px 0;
+    color: #ccc;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 1px solid #444;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-info,
+.footer-contact,
+.footer-social,
+.footer-links {
+    margin-bottom: 20px;
+    text-align: left;
+    flex-basis: calc(25% - 20px);
+}
+
+.footer-contact h3,
+.footer-social h3,
+.footer-links h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer-social ul li {
+    margin-right: 10px;
+}
+
+.footer-social ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+    color: #4d79ff; /* Azul al pasar el ratón */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #4d79ff; /* Azul al pasar el ratón */
+}
+
+/* Estilos específicos para la página de proyectos (sin cambios estructurales, solo color) */
+.card-body {
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #333; /* Fondo oscuro para las tarjetas de proyecto */
+    color: #eee;
+    border: 1px solid #444;
+}
+
+.card-body .btn {
+    margin-top: auto;
+    background-color: #4d79ff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.card-body .btn:hover {
+    background-color: #3355cc;
+}
+
+.card-text {
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.card .card-body {
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .card-body .btn {
+    margin-top: auto;
+}
+
+/* Estilos específicos para la página de FAQs (sin cambios estructurales, solo color) */
+.pagina-faqs main {
+    padding: 40px 0;
+    background-color: #262626;
+}
+
+.pagina-faqs .container h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.pagina-faqs .listado-faqs {
+    margin-top: 20px;
+}
+
+.pagina-faqs .faq-item {
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #333;
+    color: #eee;
+}
+
+.pagina-faqs .pregunta {
+    background-color: #444;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagina-faqs .pregunta::after {
+    content: '+';
+    font-size: 1.2em;
+}
+
+.pagina-faqs .pregunta[aria-expanded="true"]::after {
+    content: '-';
+}
+
+.pagina-faqs .respuesta {
+    padding: 15px;
+    background-color: #333;
+    color: #ccc;
+    border-top: 1px solid #444;
+}
+
+.pagina-faqs .respuesta[aria-hidden="true"] {
+    display: none;
+}
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    .container {
+      padding: 15px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .logo {
+      margin-bottom: 0;
+    }
+  
+    nav {
+      margin: 15px 0 0;
+      width: 100%;
+      background-color: #262626;
+    }
+  
+    /* Eliminamos estas reglas que controlaban la visibilidad del nav directamente */
+    /* nav { */
+    /* display: none !important; /* Ocultar el menú en móviles */
+    /* } */
+  
+    /* nav.active { */
+    /* display: block !important; /* Mostrar el menú activo */
+    /* } */
+  
+    /* Aseguramos que el contenedor colapsable se muestre cuando Bootstrap le añade la clase .show */
+    .navbar-collapse.show {
+      display: block !important;
+      width: 100%; /* Ocupar todo el ancho */
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0;
+      margin: 0;
+      background-color: #262626;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+  
+    nav ul li:last-child {
+      border-bottom: none;
+    }
+  
+    nav ul li a {
+      color: #eee;
+      display: block;
+      padding: 10px 0;
+      text-decoration: none;
+    }
+  
+    .hamburger {
+      display: block !important; /* Mostrar el botón hamburguesa */
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+  
+    .hamburger .line {
+      width: 30px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+  
+    .hamburger.active .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .hamburger.active .line2 {
+      opacity: 0;
+    }
+  
+    .hamburger.active .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  
+    .grid-servicios-detalle {
+      grid-template-columns: 1fr;
+    }
+  
+    .grid-razones {
+      grid-template-columns: 1fr;
+    }
+  
+    .pagina-proyectos .listado-proyectos {
+      grid-template-columns: 1fr;
+    }
+  
+    footer .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-info,
+    .footer-contact,
+    .footer-social,
+    .footer-links {
+      text-align: center;
+      margin-bottom: 20px;
+      flex-basis: 100%;
+    }
+  }
